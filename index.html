@@ -7,6 +7,8 @@
 </head>
 <body onload="afterLoad()">
 
+    <p id="relogio">Relógio</p>
+
     <h1 id="cabecalho1">Cabeçalho</h1>
 
     <button onclick="minhaFuncao()">Clique aqui</button>
@@ -15,18 +17,49 @@
         Olá, mundo!
     </div>
 
-    <div class="conteiner">
-        <label for="nome">Nome:</label>
+    <br>
+
+    <button id="btnCancelTimeout">Cancelar timeout</button>
+
+    <div id="divForm" class="conteiner">
+        <label id="lblNome" for="nome">Nome:</label>
         <input type="text" id="nome"> <!-- onfocus="focoInputNome('Digite um nome:')"  -->
+        <br>
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" name="" id="sobrenome">
+        <br>
+        <button id="btnAddCampo">Add Novo Campo</button>
     </div>
     <br>
 
-    <button>Salvar</button>
+    <button id="btnSalvar" >Salvar</button>
+    <br>
+    <button id="btnLimparStorage">Limpar Dados</button>
 
-
-    <p>paragrafo Um</p>
+    <p id="pUm">paragrafo Um
+        <button id="btnApagaP">Apagar parágrafo anterior</button>
+    </p>
+    <br>
+    
     <p>paragrafo Dois</p>
 
+    <button id="btnDesabilitaAlertas">Desabilitar alertas</button>
+    <br>
+    <button id="btnAddParagrafo">Adicionar parágrafo</button>
+
+    <br>
+    <input placeholder="Digite o nome do primeiro pet" type="text" name="" id="pet1">
+    <br>
+    <input placeholder="Digite o nome do segundo pet" type="text" name="" id="pet2">
+    <br>
+    <button id="btnSalvaPets">Salvar Pets</button>
+
+    <br>
+    <label>Lista de Pets:</label>
+    <ul id="listPets">
+    </ul>
+
     <script src="script.js"></script>
+
 </body>
 </html>
